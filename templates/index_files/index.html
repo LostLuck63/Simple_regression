@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- saved from url=(0141)http://localhost:8888/files/Desktop/Deployment/Deployment%20of%20ML%20models%20in%20Heroku%20using%20FLASK/simple%20test/templates/index.html -->
+<html><!--From https://codepen.io/frytyler/pen/EGdtg--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>ML API</title>
+  <link href="./css" rel="stylesheet" type="text/css">
+<link href="./css(1)" rel="stylesheet" type="text/css">
+<link href="./css(2)" rel="stylesheet" type="text/css">
+<link href="./css(3)" rel="stylesheet" type="text/css">
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Simple Regression Problem</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="http://localhost:8888/files/Desktop/Deployment/Deployment%20of%20ML%20models%20in%20Heroku%20using%20FLASK/simple%20test/templates/%7B%7B%20url_for(&#39;predict&#39;)%7D%7D" method="post">
+    	<input type="text" name="number1" placeholder="number1" required="required">
+        <input type="text" name="number2" placeholder="number2" required="required">
+		
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+
+
+</body></html>
